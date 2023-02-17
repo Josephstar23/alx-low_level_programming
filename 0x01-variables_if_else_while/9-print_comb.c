@@ -8,17 +8,19 @@
 int main(void)
 
 {
-	int n = 0;
+	int i;
 
-	while (n < 10)
+	i = 48;
+
+	while (i < 58)
 	{
-		putchar(48 + n);
-		if (n != 49)
+		putchar(i);
+		if (i != 57)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		n++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
