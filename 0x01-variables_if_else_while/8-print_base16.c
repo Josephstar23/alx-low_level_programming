@@ -8,14 +8,18 @@
 int main(void)
 
 {
-	int num;
-	char lm;
+	int n;
+	char ch;
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+	}
 
-	for (lm = 'a'; lm <= 'z'; lm++)
-		putchar(lm);
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
 
 	putchar('\n');
 
