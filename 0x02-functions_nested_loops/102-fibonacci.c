@@ -24,7 +24,7 @@ int main(void)
 		if (list == 49)
 			printf("\n");
 		else
-			pritnf(", ");
+			printf(", ");
 	}
 	return (0);
 }
