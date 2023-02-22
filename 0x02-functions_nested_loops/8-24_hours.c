@@ -4,21 +4,42 @@
  * jack_bauer - prints every minute of the day
  */
 
-void jack_bauer(void);
-
+void jack_bauer(void)
 {
-	int hour, minute;
+	int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
 
-	for (hour = 0; hour <= 23; hour++)
+	hours_max = 58;
+	hours_tens = '0';
+	while (hours_tens < '3')
 	{
-		for (minute = 0; minute <= 59; minute++)
+		if (hours_tens == '2')
+		{
+			hours_max = '4';
+		}
+		hours_ones = '0';
+		while (hours_ones < hours _max)
+		{
+			minutes_tens = '0';
+			while (minutes_tens < '6')
+			{
+				minutes_ones = '0';
+				while (minutes_ones < 58)
 				{
-					_putchar((hour / 10) + '0');
-					_putchar((hour % 10) + '0');
+					_putchar(hours_tens);
+					_putchar(hours_ones);
 					_putchar(':');
-					_putchar((minute / 10) + '0');
-					_putchar((minute % 10) + '0');
+					_putchar(minutes_teens);
+					_putchar(minutes_ones);
 					_putchar('\n');
+					minutes_ones++;
 				}
+				minutes_ones = '0';
+				minutes_tens++;
+			}
+			minutes_tens = '0';
+			hours_ones++;
+		}
+		hours_ones = '0';
+		hours_tens++;
 	}
 }
